@@ -34,6 +34,21 @@ Output:  22-year olds should date somebody who is at least 18 years old.
 
 Credit: Thanks to Jim Cohoon at The University of Virginia
 
+public class DatingAgeRule {
+public static void main(String[] args) {
+// Create a Scanner object for user input
+Scanner scanner = new Scanner(System.in);
+
+Enter your age
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt(15);
+// Calculate the minimum dating age according to the rule
+        int minDatingAge = 7 + (age / 2);
+// Display the result
+        System.out.println(age + "-year olds should date somebody who is at least " + minDatingAge + " years old.");
+// Close the scanner
+        scanner.close();
+
 2. <b> Pages </b>
 
 There is a folk rule stating the number of pages you should read before giving up on a book is 100 - your age. For example, a 21 year old needs to read 79 pages ( 100 - 21 ). Write a program that stores your age as an integer in a variable named age. The program then computes and displays the minimal number of pages to read.
